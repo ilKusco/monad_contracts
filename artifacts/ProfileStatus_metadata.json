@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "status",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "newStatus",
+						"type": "string"
+					}
+				],
+				"name": "updateStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/ProfileStatus.sol": "ProfileStatus"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/ProfileStatus.sol": {
+			"keccak256": "0xcb246601062cb85642b8fe83c447c5e95d26659563c9cea63eb778507f931d82",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3a56140c286adff254455793852c4171506d031ba629d6ccb042b1dbab92afab",
+				"dweb:/ipfs/QmRZxXdgsLduUTk3vNM1gPnGsMjdgj3qFZDPGnzsJhGeHN"
+			]
+		}
+	},
+	"version": 1
+}

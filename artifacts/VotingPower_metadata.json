@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "power",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "val",
+						"type": "uint256"
+					}
+				],
+				"name": "setPower",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/VotingPower.sol": "VotingPower"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/VotingPower.sol": {
+			"keccak256": "0x18908c8dd6597c82206dea5a4061dcb55393458d6e5bce6ab9a6c3966bde9e5e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b38b149319ad554de943dbc7cc9a4b1fd59c0c8a6a845c360f069ea35c6ac544",
+				"dweb:/ipfs/QmVhdLaYzY8YK2GAykngkN3FYLWpqxdm39sdrzuMnzry4k"
+			]
+		}
+	},
+	"version": 1
+}

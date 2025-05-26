@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "guess",
+						"type": "bool"
+					}
+				],
+				"name": "flip",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "winnings",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/PointTracker.sol": "CoinFlipGame"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/PointTracker.sol": {
+			"keccak256": "0xdb7ae2c67a0256eeae71c6512f779240dbdbf99c06d6ff4e50d0ab6b6770e00e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f482d98ab115ba524831b3d86fd72a7c400d9ab348c963933166a8191a08d610",
+				"dweb:/ipfs/QmRLxveLqtNkeskWeSdjc94jF1i7bouRGZe5LrRv6R8Ywy"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "greeting",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_greeting",
+						"type": "string"
+					}
+				],
+				"name": "setGreeting",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/HelloWorld.sol": "HelloWorld"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/HelloWorld.sol": {
+			"keccak256": "0x5acf91db700643ff3d3ce1240253d335caafea6febf6c64048e12cf7ae27dffb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://64b8eea834a4c1259f65b4eef434341b3d719f28369e951e4b14a064dcb8158f",
+				"dweb:/ipfs/QmU2mj7yjfVQYHcnbT6xz2vWdopF1nt5MJy5SvC3vYo3jg"
+			]
+		}
+	},
+	"version": 1
+}

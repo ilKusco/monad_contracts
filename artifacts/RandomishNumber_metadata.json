@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getRandom",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/RandomishNumber.sol": "RandomishNumber"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/RandomishNumber.sol": {
+			"keccak256": "0x807916653e4f7de539db2fa0f0ebaa5b447621297e439690b86681747bcb1e05",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ad54dbead68bc44208f64d8b78e51a2b197821142ba1c97c63585e3fa49a5850",
+				"dweb:/ipfs/QmUuJEFneeW4VTBHc5d9xf77TnRZNDh3A45jma2uC465cb"
+			]
+		}
+	},
+	"version": 1
+}

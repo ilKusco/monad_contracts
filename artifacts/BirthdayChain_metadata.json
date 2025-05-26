@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "birthday",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "date",
+						"type": "string"
+					}
+				],
+				"name": "setBirthday",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/BirthdayChain.sol": "BirthdayChain"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/BirthdayChain.sol": {
+			"keccak256": "0x89b5da97b748037990656ef7a350398554c836b8505411841382e2cb52e014ab",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://64fb4fa4c3782efe7cb3fa5f2451495d1b08c410e9cdb973abc1555f3f277376",
+				"dweb:/ipfs/QmVpAn67Z3vxZKAjpbgmzrgf4V14wAaPZaQf135Fv959Gf"
+			]
+		}
+	},
+	"version": 1
+}

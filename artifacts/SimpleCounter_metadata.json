@@ -1,0 +1,90 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getMyCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "increment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "reset",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"getMyCounter()": {
+					"returns": {
+						"_0": "Il numero corrente"
+					}
+				}
+			},
+			"title": "SimpleCounter - Un contatore personale per ogni utente",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getMyCounter()": {
+					"notice": "Ritorna il valore del proprio contatore"
+				},
+				"increment()": {
+					"notice": "Incrementa il contatore dell'utente chiamante"
+				},
+				"reset()": {
+					"notice": "Resetta il contatore dell'utente chiamante a zero"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/TimeLockedWallet.sol": "SimpleCounter"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/TimeLockedWallet.sol": {
+			"keccak256": "0x842ee41055baf45732157fd73c383efa75be04768f76fea3f5bcb480030d7e37",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://516bb27dc9b3a6b87a055ee60f677e392d3e2eb53ee7c71a0c9c5a27c17558d2",
+				"dweb:/ipfs/QmUSdV3uhV5yBN8M6SQ8SJK5WoP7ZTnyo7qUxiGyqzb9q5"
+			]
+		}
+	},
+	"version": 1
+}

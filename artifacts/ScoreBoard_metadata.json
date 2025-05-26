@@ -1,0 +1,116 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "player",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "score",
+						"type": "uint256"
+					}
+				],
+				"name": "NewHighScore",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "player",
+						"type": "address"
+					}
+				],
+				"name": "getHighScore",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "highScores",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "score",
+						"type": "uint256"
+					}
+				],
+				"name": "submitScore",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/ScoreBoard.sol": "ScoreBoard"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/ScoreBoard.sol": {
+			"keccak256": "0x2386d07c7e020876975d851ecb280b86a4df7df05aef827f53e29b0ec92101d3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://eddb16d3ea13cfc6dbffbdc557e9a99eca8fba8d93b0692298d4e5de21deeaa8",
+				"dweb:/ipfs/QmcTW3hGUDz8VJGQSbbgmP99d4WXhYzwZAcgAHuSdWdrUd"
+			]
+		}
+	},
+	"version": 1
+}

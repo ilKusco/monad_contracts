@@ -1,0 +1,92 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_addr2",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "recipient1",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "recipient2",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/Splitter.sol": "Splitter"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/Splitter.sol": {
+			"keccak256": "0x96d1a3b0f94d4486bde03e8a826e3c775c3fa1961e98440000c796893c631038",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a610d6137e288af59a05d177d688acae71e5ddec49ec9efdfeaa1523f84f2268",
+				"dweb:/ipfs/QmZko1TMVuCi98RsTdbDenrqXpT4rbrhKfe3HCGCrUjAbF"
+			]
+		}
+	},
+	"version": 1
+}

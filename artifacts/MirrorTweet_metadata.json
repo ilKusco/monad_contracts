@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					}
+				],
+				"name": "Tweeted",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					}
+				],
+				"name": "tweet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/MirrorTweet.sol": "MirrorTweet"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/MirrorTweet.sol": {
+			"keccak256": "0x4ba6003d870f1e2e96cf0028224fd92c07bb98766856fb5f43cba8e53ce0abb2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://522696988f0c41ab55a55090f35533ee8753dfd98bae79780f5f6e410e571b10",
+				"dweb:/ipfs/Qmdw5UFmNqNf7GgznVVviJ6JdKZtNjABM6FurEpNUMMDyw"
+			]
+		}
+	},
+	"version": 1
+}

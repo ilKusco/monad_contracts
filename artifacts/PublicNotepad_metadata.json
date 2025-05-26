@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "messages",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "msgText",
+						"type": "string"
+					}
+				],
+				"name": "write",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/PublicNotepad.sol": "PublicNotepad"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/PublicNotepad.sol": {
+			"keccak256": "0x3e6416ffda34cabaf53a9c027901a786277e22bd7a3b574c9a3b4aa6a0b2e648",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a91df80cee5b59a160f2ef72f4c58bff9f260cbfe4c3c92bb69a5b6f7016d40a",
+				"dweb:/ipfs/QmPdQiq1HnSRuzghGr8Q6gcMzyrN8mQ2Tg5c3K5hww1WGe"
+			]
+		}
+	},
+	"version": 1
+}

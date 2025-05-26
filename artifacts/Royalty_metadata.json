@@ -1,0 +1,95 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_artist",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_percent",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "artist",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "payArtist",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "royaltyPercent",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/Royalty.sol": "Royalty"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/Royalty.sol": {
+			"keccak256": "0xb19b9651c2e44ef2e18fefcb4a6da1c0d89cba1bdd5e5123e00e965dac056aca",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f36addb4362a25fceb25e8cc4a0c247ac90d6888ce3475130560843d807e5ef3",
+				"dweb:/ipfs/Qmeoq66EwGJGGiu5WT1SpdxQgcCSUNaEQXnb9YivU9xoG4"
+			]
+		}
+	},
+	"version": 1
+}

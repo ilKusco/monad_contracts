@@ -1,0 +1,206 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_unlockTime",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Deposited",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrawn",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getInfo",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "walletOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "walletBalance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "unlockTimestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isWithdrawn",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "unlockTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawn",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"params": {
+						"_unlockTime": "Timestamp Unix dopo il quale sarà possibile prelevare"
+					}
+				}
+			},
+			"title": "TimeLockedWallet - Un portafoglio che blocca i fondi fino a una data futura",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"constructor": {
+					"notice": "Costruttore, inizializza owner e tempo di sblocco"
+				},
+				"getBalance()": {
+					"notice": "Restituisce il saldo ETH presente nel contratto"
+				},
+				"getInfo()": {
+					"notice": "Informazioni generali"
+				},
+				"withdraw()": {
+					"notice": "Permette all'owner di prelevare i fondi una volta raggiunto unlockTime"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/TimeLockedWallet.sol": "TimeLockedWallet"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/TimeLockedWallet.sol": {
+			"keccak256": "0xa55e36b71a5b2d162d53a1ac77177c24e0c3b61e52fdd695f813ec766239f45f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3581afa9814adac42df7a45247ef4a0401e19b6353e26a1d09d97847493a92a0",
+				"dweb:/ipfs/QmUgzyvX8Dz8WKiJ83JoxD9T2tmSPcjY7zRRvN8hb8ptA1"
+			]
+		}
+	},
+	"version": 1
+}

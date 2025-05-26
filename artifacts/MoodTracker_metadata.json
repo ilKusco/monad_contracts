@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "mood",
+				"outputs": [
+					{
+						"internalType": "enum MoodTracker.Mood",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "moodCode",
+						"type": "uint8"
+					}
+				],
+				"name": "setMood",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/MoodTracker.sol": "MoodTracker"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/MoodTracker.sol": {
+			"keccak256": "0xab21a9462df7794537b16d1139c0f6bbeaa42fd802c722d3f14e98549dffc2d2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cef66cb947868389158e4d142cb2cf5815d35e84c826827bd7f2bda9cf06f372",
+				"dweb:/ipfs/QmPfnuT7kAUp2zZif5couMdMrsWJxaFccCCGuyu9K3EkLc"
+			]
+		}
+	},
+	"version": 1
+}

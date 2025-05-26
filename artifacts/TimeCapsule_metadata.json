@@ -1,0 +1,88 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "capsules",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "unlockTime",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "open",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/TimeCapsule.sol": "TimeCapsule"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/TimeCapsule.sol": {
+			"keccak256": "0xcb8e3c4b919074ad7c4f3e121e4951802711043db1b047b6073d98a38a722eee",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://344dff5ad2c9e9b12351cf3940085739c8503ecf9ea6fa6af00a4bdcf0385e5c",
+				"dweb:/ipfs/QmaVMh7Q3jA3PpCpmtaJFB6CHgdw9cZ6QFShvnroSGAwLe"
+			]
+		}
+	},
+	"version": 1
+}

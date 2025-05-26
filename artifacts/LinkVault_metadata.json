@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "url",
+						"type": "string"
+					}
+				],
+				"name": "addLink",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "links",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/LinkVault.sol": "LinkVault"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/LinkVault.sol": {
+			"keccak256": "0x0b3f1df6698e46bebaf15ad170b9f1677b9d9a5d4db78e05b77a1074fe79cd0d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1d862654d916e1e634f58b625455b44f7a981e412cfb3d16cd1bf6482cb348f8",
+				"dweb:/ipfs/QmXcrS85fs66vTsd9moAd3w8xCppzQrbqWLeCWGcBgSNXg"
+			]
+		}
+	},
+	"version": 1
+}

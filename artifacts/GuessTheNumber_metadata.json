@@ -1,0 +1,161 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "winner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "prize",
+						"type": "uint256"
+					}
+				],
+				"name": "GameWon",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "player",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "guess",
+						"type": "uint8"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "correct",
+						"type": "bool"
+					}
+				],
+				"name": "NumberGuessed",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "gameEnded",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getHint",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_guess",
+						"type": "uint8"
+					}
+				],
+				"name": "guess",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isGameActive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "winner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Contract: GuessTheNumber A simple on-chain guessing game where the first player to guess the correct number wins all the ETH in the contract.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/GuessTheNumber.sol": "GuessTheNumber"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/GuessTheNumber.sol": {
+			"keccak256": "0xca1ffdc4a431d43976b9b42b4fc0d6d7f6b0d529eacb26984a3f20a814be8084",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://df660973144ac0b4a79badb23c408637687502de8c2bcfc7e619e397b1140bcf",
+				"dweb:/ipfs/Qmaq2iJ4tY5sCabj8W3Fpnci2qNUYhBNr9bErH3ppLW3SB"
+			]
+		}
+	},
+	"version": 1
+}

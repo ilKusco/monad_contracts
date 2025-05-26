@@ -1,0 +1,184 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "emoji",
+						"type": "string"
+					}
+				],
+				"name": "Reacted",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "emojiCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "emojiOptions",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "emoji",
+						"type": "string"
+					}
+				],
+				"name": "getCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myReaction",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "emoji",
+						"type": "string"
+					}
+				],
+				"name": "react",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "reactions",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"react(string)": {
+					"params": {
+						"emoji": "L'emoji da inviare"
+					}
+				}
+			},
+			"title": "EmojiReactions - Reazioni on-chain in stile social",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getCount(string)": {
+					"notice": "Conteggio di una specifica emoji"
+				},
+				"myReaction()": {
+					"notice": "Ottiene la reazione dell'utente"
+				},
+				"react(string)": {
+					"notice": "Invia o cambia la propria reazione"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/EmojiReactions.sol": "EmojiReactions"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/EmojiReactions.sol": {
+			"keccak256": "0x6ffdee39b66d21a1213546a804e999234ddb50a9974cf09298113c0743677d13",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d52534072d73b4be0dbfa631c48b785040fa70cf46955183ad94d1abdd32abe6",
+				"dweb:/ipfs/Qmbkux1d8mwVEJggLQy4xTE3RDpbxM5sw3CB9C3MMi25NF"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,120 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_question",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "_options",
+						"type": "string[]"
+					}
+				],
+				"name": "createPoll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "pollId",
+						"type": "uint256"
+					}
+				],
+				"name": "getVotes",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "results",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "polls",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "question",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "pollId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "optionId",
+						"type": "uint256"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/PollSystem.sol": "PollSystem"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/PollSystem.sol": {
+			"keccak256": "0x96da1834b9edfa89556acc32d57240633e893e35b0ea5419a6a54bc74f6e3c22",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://003e0daed1e1704e2e67db199d060187980b5225a3791f6db51945b2e5cc8580",
+				"dweb:/ipfs/QmQZ7kKp2u7xmDHhfHr55eMYCss3zLDhPZ638p5DUXThLH"
+			]
+		}
+	},
+	"version": 1
+}

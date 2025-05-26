@@ -1,0 +1,296 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "challenger",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "opponent",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "stake",
+						"type": "uint256"
+					}
+				],
+				"name": "ChallengeCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "winner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "loser",
+						"type": "address"
+					}
+				],
+				"name": "ChallengeResolved",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "challenges",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "challenger",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "opponent",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "stake",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "createdAt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "resolved",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_opponent",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_stake",
+						"type": "uint256"
+					}
+				],
+				"name": "createChallenge",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "getChallenge",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "challenger",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "opponent",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "stake",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "createdAt",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "resolved",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct InfluenceArena.Challenge",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "getPlayer",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "influence",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reputation",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "lockedUntil",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct InfluenceArena.Player",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "joinArena",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "players",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "influence",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reputation",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lockedUntil",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "resolveChallenge",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Contract: InfluenceArena A decentralized social arena where users stake reputation to challenge others. Winners gain influence, losers lose reputation. Stakes are locked for 1 day per challenge.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/InfluenceArena.sol": "InfluenceArena"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/InfluenceArena.sol": {
+			"keccak256": "0x465fad8591718a87a68f2ae7d23d7dcba95518bedb07fcf1487631d4b8d48ef2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8183824ce9369827785f4abd2327e22392ae364487aef568430f037061178cd3",
+				"dweb:/ipfs/Qmega3yvTSDit7gR2x1x1tTTHTB5nXNUseW4hbLeZ9HpY4"
+			]
+		}
+	},
+	"version": 1
+}

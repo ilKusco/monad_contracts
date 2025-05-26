@@ -1,0 +1,173 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "time",
+						"type": "uint256"
+					}
+				],
+				"name": "NoteAdded",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getAllNotes",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "sender",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "message",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct PublicNotes.Note[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					}
+				],
+				"name": "leaveNote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "notes",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalNotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"leaveNote(string)": {
+					"params": {
+						"_message": "Il messaggio da lasciare"
+					}
+				}
+			},
+			"title": "PublicNotes - Guestbook decentralizzato su blockchain",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getAllNotes()": {
+					"notice": "Restituisce tutti i messaggi"
+				},
+				"leaveNote(string)": {
+					"notice": "Aggiunge un messaggio al guestbook"
+				},
+				"totalNotes()": {
+					"notice": "Restituisce il numero totale di messaggi"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"monad dashboard/PublicNotes.sol": "PublicNotes"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"monad dashboard/PublicNotes.sol": {
+			"keccak256": "0xec1b71ab9d07c3ffd7ff4a5a279418b0e02e1383fe17444ea5ed458c15b64b83",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7de286df482c054d7b188b3af38324b623bbdee8a704b23cff31bb64ff959498",
+				"dweb:/ipfs/QmVD8J9x9wxpZt3iNJGuxvzTVJ9Urm47cNR3DxDUo1dKf8"
+			]
+		}
+	},
+	"version": 1
+}
